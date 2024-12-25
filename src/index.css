@@ -1,0 +1,456 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.authorization-mainbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(./pages/authorization/img/autorization-background.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+.list {
+    background: #F9F9F9;
+    width: 768px;
+    min-height: 1px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 32px;
+}
+
+/*  Утилиты  */
+
+.border-radius-11-px-top-right {
+    border-top-right-radius: 11px;
+}
+
+.border-radius-11-px-top-left {
+    border-top-left-radius: 11px;
+}
+
+.border-radius-11-px-bottom-left {
+    border-bottom-left-radius: 11px;
+}
+
+.border-radius-11-px-bottom-right {
+    border-bottom-right-radius: 11px;
+}
+
+/*  Кнопки  */
+.authorization-button-box {
+    width: 388px;
+    height: 52px;
+    background-color: rgba(0, 0, 0, 0.05);
+    display: flex; 
+    justify-content: center; 
+    border-radius: 8px;
+    border: none;
+    margin-top: 30px;
+}
+
+.authorization-button {
+    width: 194px;
+    height: 52px;
+    color: black;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+.authorization-button.active {
+    background: #437055;
+    color: #F9F9F9;
+}
+
+/* Авторизация */
+
+.authorization-input-box {
+    width: 95%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 90px;
+}
+
+.authorization-input-left-wrapper {
+    height: 206px;
+    width: 391px;
+    
+}
+
+.authorization-input-left-wrapper form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.authorization-input-right-wrapper {
+    height: 206px;
+    width: 206px;
+}
+
+.authorization-input {
+    height: 49px; 
+    width: 391px; 
+    border-radius: 4px;
+    border: 1px solid #437055; 
+    background: none; 
+    color: #878787;
+    font-size: 15px; 
+    line-height: 49px; 
+    text-indent: 12px;
+    margin-bottom: 11px;
+}
+
+.authorization-input:focus {
+    outline: none; 
+}
+
+.authorization-button-check {
+    width: 391px;
+    height: 49px;
+    color: #F9F9F9;
+    cursor: not-allowed;
+    border: none;
+    border-radius: 4px;
+    background: #437055;
+    transition: 0.3s ease;
+    opacity: 0.5;
+
+}
+
+.authorization-button-check {
+    width: 391px;
+    height: 49px;
+    color: #F9F9F9;
+    cursor: not-allowed;
+    border: none;
+    border-radius: 4px;
+    background: #437055;
+    transition: 0.3s ease;
+    opacity: 0.5;
+}
+
+.authorization-button-check.active {
+    background: #437055;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.authorization-link {
+    margin-bottom: 19px;
+
+}
+
+.authorization-link {
+    margin-left: 8px;
+    font-size: 14px;
+    color: #0000007e
+}
+
+/* Регистрация */
+
+.registration-input-box {
+    width: 95%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    align-items: center;
+}
+
+.registration-input-left-wrapper {
+    min-height: 292px;
+    width: 391px;
+}
+
+.registration-input-left-wrapper form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.registration-input-right-wrapper {
+    height: 206px;
+    width: 206px;
+    
+}
+
+.registration-input {
+    height: 49px; 
+    width: 391px; 
+    border-radius: 4px;
+    border: 1px solid #437055; 
+    background: none; 
+    color: #878787;
+    font-size: 15px; 
+    line-height: 49px; 
+    text-indent: 12px;
+    margin-bottom: 11px;
+}
+
+.registration-input:focus {
+    outline: none; 
+}
+
+.registration-button-check {
+    width: 391px;
+    height: 49px;
+    color: #F9F9F9;
+    cursor: not-allowed;
+    border: none;
+    border-radius: 4px;
+    background: #437055;
+    transition: 0.3s ease;
+    opacity: 0.5;
+}
+
+.registration-button-check {
+    width: 391px;
+    height: 49px;
+    color: #F9F9F9;
+    cursor: not-allowed;
+    border: none;
+    border-radius: 4px;
+    background: #437055;
+    transition: 0.3s ease;
+    opacity: 0.5;
+}
+
+.registration-button-check.active {
+    background: #437055;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.registration-link {
+    margin-bottom: 19px;
+
+}
+
+.registration-link {
+    margin-left: 8px;
+    font-size: 14px;
+    color: #0000007e
+}
+
+/* Восстановление пароля */
+
+.recovery-mainbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(./pages/authorization/img/autorization-background.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+.recovery-title-box {
+    width: 388px;
+    height: 52px;
+    background: #437055;
+    align-items: center;
+    display: flex; 
+    justify-content: center; 
+    border-radius: 8px;
+    border: none;
+    margin-top: 30px;
+}
+
+.recovery-title-box p {
+    font-size: 18px;
+}
+
+.recovery-input-box {
+    width: 95%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    align-items: center;
+    
+}
+
+.recovery-title {
+    color: #F9F9F9;
+    font-size: 14px;
+    
+    
+}
+
+.recovery-input-left-wrapper {
+    min-height: 22px;
+    width: 391px;
+}
+
+.recovery-input-left-wrapper form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.recovery-input-right-wrapper {
+    height: 169px;
+    width: 169px;
+    
+}
+
+.recovery-input-right-wrapper img {
+    height: 169px;
+    width: 169px;
+}
+
+.recovery-input {
+    height: 49px; 
+    width: 391px; 
+    border-radius: 4px;
+    border: 1px solid #437055; 
+    background: none; 
+    color: #878787;
+    font-size: 15px; 
+    line-height: 49px; 
+    text-indent: 12px;
+    margin-bottom: 11px;
+}
+
+.recovery-input:focus {
+    outline: none; 
+}
+
+.recovery-button-check {
+    width: 391px;
+    height: 49px;
+    color: #F9F9F9;
+    cursor: not-allowed;
+    border: none;
+    border-radius: 4px;
+    background: #437055;
+    transition: 0.3s ease;
+    opacity: 0.5;
+}
+
+.recovery-button-check {
+    width: 391px;
+    height: 49px;
+    color: #F9F9F9;
+    cursor: not-allowed;
+    border: none;
+    border-radius: 4px;
+    background: #437055;
+    transition: 0.3s ease;
+    opacity: 0.5;
+}
+
+.recovery-button-check.active {
+    background: #437055;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.recovery-link {
+    margin-left: 8px;
+    font-size: 14px;
+    color: #0000007e;
+}
+
+.authorization-link-box {
+    margin-bottom: 19px;
+    cursor: pointer;
+}
+
+
+/*  НАВИГАЦИОННОЕ МЕНЮ */
+.nav {
+    position: relative;
+    background: #4f8163;
+    width: 464.7px;
+    height: 100vh;
+    z-index: 0;
+    border-top-right-radius: 47px;
+    border-bottom-right-radius: 47px;
+    overflow: hidden;
+}
+
+.nav-mainbox {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+
+}
+
+.nav-logo-box {
+    display: flex;
+    text-align: left;
+    margin-left: 48px;
+    font-size: 28px;
+    color: #F9F9F9;
+    margin-top: 48px;
+    width: 200px;
+}
+
+.nav-logo-box h1 span {
+    font-weight: 400;
+}
+
+.nav-link-box {
+    margin-top: 132px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 48px;
+    width: 324px;
+    border-radius: 20px;
+    gap: 3px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 24px;
+    color: #4f8163;
+    height: 65px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    background: white;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-link img {
+    margin-right: 14px;
+}
+
+.nav-link:hover {
+    background: #e8e8e8;
+    transition: all 0.3s ease;
+}
+
+.nav-footer-text {
+    font-size: 16px;
+    color: #F9F9F9;
+    position: absolute;
+    bottom: 40px;
+    left: 20%;
+}
+
+.nav-cube-img {
+    position: absolute;
+    bottom: -100px;
+    left: -100px;
+}
+
+.nav-leaf-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
